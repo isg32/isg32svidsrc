@@ -1,10 +1,69 @@
+body {
+  background-color: #282c34;
+  color: #ffffff;
+}
+
 .App {
   text-align: center;
+  flex: auto;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.movies-container {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  gap: 50px; 
+  padding: 100px;
+  justify-content: center;
+}
+
+.moviecards {
+  width: 90%; 
+  height: auto;
+  background-color: #8080809a;
+  padding: 30px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); 
+}
+
+/* Ensure the poster fits within the card */
+.posters {
+  max-width: 100%; /* Fit inside the card */
+  border-radius: 10px;
+  margin: 10px;
+}
+
+/* Align text nicely */
+.moviecards p {
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* Style the play button */
+.playbutton {
+  background-color: #ff4848;
+  width: 100%; /* Adjust for better alignment */
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.card-headline {
+  flex-direction: column;
+}
+
+.playbutton p {
+  padding: 10px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
 }
 
 @media (prefers-reduced-motion: no-preference) {

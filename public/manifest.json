@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "The VIDSRC App",
+  "name": "a VIDSRC implementation by isg32",
   "icons": [
     {
       "src": "favicon.ico",
