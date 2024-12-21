@@ -13,12 +13,32 @@ body {
   pointer-events: none;
 }
 
-.movies-container {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(200px, 1fr));
-  gap: 50px; 
-  padding: 100px;
-  justify-content: center;
+@media screen and (max-width: 750px) {
+  .movies-container {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(300px, 1fr));
+    gap: 1%; 
+    padding: 8%;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .movies-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    gap: 3%; 
+    padding: 3%;
+    justify-content: left;
+  }
+}
+
+.selbutton {
+  background-color: darkslategray;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 5px;
+  color: white;
 }
 
 .moviecards {
